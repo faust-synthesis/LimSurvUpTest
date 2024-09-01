@@ -50,4 +50,4 @@ mobs:spawn({
 	max_height = 1000,
 })
 
-mobs:register_egg("animalz:cow", "Cow", "animalz_cow_egg", 1)
+mobs:register_egg("animalz:cow", "Cow", "animalz_cow_egg.png", 1)

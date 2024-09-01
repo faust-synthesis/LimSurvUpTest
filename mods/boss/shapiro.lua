@@ -86,4 +86,4 @@ mobs:register_arrow("boss:hyperchargedbenshapirodeathlaserthatdestroyslibs", {
 
 --Ben Shapiro
 
-mobs:register_egg("boss:shapiro", "Ben Shapiro Prime", "grass_texture", 1)
+mobs:register_egg("boss:shapiro", "Ben Shapiro Prime", "grass_texture.png", 1)
