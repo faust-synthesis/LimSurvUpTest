@@ -49,3 +49,12 @@ minetest.register_node("animalz:cooked_egg", {
 		end
 	end,
 })
+
+--turn cow egg into eddible cow egg (raw egg)
+ 
+minetest.register_craft({
+	output = "animalz:raw_egg 1",
+	recipe = {
+		{"animalz:cow"},
+	}
+})
