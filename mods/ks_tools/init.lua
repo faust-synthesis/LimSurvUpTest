@@ -44,7 +44,8 @@ minetest.register_item(':', {
 			sliceable={times={[1]=1, [2]=3}, maxlevel=1},
 			diggable={times={[1]=3}, maxlevel=1},
 			grabbable={times={[1]=0.0}},
-			oddly_diggable_by_hand={times={[3]=0.0}}
+			oddly_breakable_by_hand={times={[3]=1.5, [2]=2}},
+			crumbly={times={[3]=2.25}}
 		},
 		damage_groups = {fleshy=0}
 	}
