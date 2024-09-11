@@ -23,6 +23,7 @@ minetest.register_craftitem("ketchuptest_items:iron", {
 minetest.register_craftitem("ketchuptest_items:rock", {
     description = "Rock",
     inventory_image = "rock_texture.png",
+    groups = {rock = 1}
 })
 
 minetest.register_craftitem("ketchuptest_items:tomato", {
