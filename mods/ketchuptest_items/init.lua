@@ -23,6 +23,7 @@ minetest.register_craftitem("ketchuptest_items:iron", {
 minetest.register_craftitem("ketchuptest_items:rock", {
     description = "Rock",
     inventory_image = "rock_texture.png",
+    groups = {rock = 1}
 })
 
 minetest.register_craftitem("ketchuptest_items:tomato", {
@@ -103,8 +104,9 @@ minetest.register_craftitem("ketchuptest_items:stick", {
                 uses = 0,
             },
         },
-        damage_groups = {fleshy = 1},
-    }
+        damage_groups = {fleshy = 1}
+    },
+    groups = {stick = 1}
 })
 
 minetest.register_craftitem("ketchuptest_items:iron_pickaxe", {

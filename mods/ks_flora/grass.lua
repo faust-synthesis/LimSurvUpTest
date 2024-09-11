@@ -384,8 +384,8 @@ minetest.register_abm({
 minetest.register_abm({
 	nodenames = {"ks_flora:juncus_1"},
 	neighbors = juncus_soil_types,
-	interval = growthrate/2,
-	chance = growthchance/2,
+	interval = growthrate,
+	chance = growthchance,
 	action = function(pos, node, active_object_count, active_object_count_wider)
 		local pos = {x = pos.x, y = pos.y, z = pos.z}
 		minetest.set_node(pos, {name = "ks_flora:juncus_2_twin"})
