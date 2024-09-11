@@ -47,6 +47,6 @@ minetest.register_item(':', {
 			oddly_breakable_by_hand={times={[3]=1.5, [2]=2}},
 			crumbly={times={[3]=2.25}}
 		},
-		damage_groups = {fleshy=0}
+		damage_groups = {fleshy=1}
 	}
 })
