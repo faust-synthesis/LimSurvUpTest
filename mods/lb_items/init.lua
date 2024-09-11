@@ -36,6 +36,7 @@ minetest.register_craftitem("lb_items:fishing_pole", {
 minetest.register_craftitem("lb_items:stick", {
     description = "Stick",
     inventory_image = "stick_texture.png",
+    groups = {stick = 1}
 })
 
 minetest.register_craftitem("lb_items:torch", {
