@@ -62,7 +62,7 @@ register_node('lb_nodes_and_generation:water', {
     tiles = { 'water_texture.png' },
     description = "Water",
     walkable = false,
-    groups = { oddly_breakable_by_hand = 3 },
+    groups = { oddly_breakable_by_hand = 3, water = 3 },
     is_ground_content = true
 })
 

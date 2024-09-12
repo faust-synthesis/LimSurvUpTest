@@ -113,6 +113,32 @@ minetest.register_craftitem("lb_items:copper_drill", {
     }
 })
 
+minetest.register_craftitem("lb_items:waterbucket", {
+    description = "Water bucket",
+    inventory_image = "waterbucket_textur.png",
+    tool_capabilities = {
+        full_punch_interval = 0.5,
+        max_drop_level = 0,
+        groupcaps = {
+            water = {
+                times = {[3] = 0.01},
+                uses = 0,
+                maxlevel = 1,
+            }
+        },
+        damage_groups = {fleshy = 1},
+    }
+})
+
+minetest.register_craft({
+    type = "shaped",
+    output = "lb_items:waterbucket",
+    recipe = {
+        {"lb_nodes_and_generation:water", "", "lb_nodes_and_generation:water"},
+        {"", "lb_nodes_and_generation:water", ""}
+    }
+})
+
 minetest.register_craft({
 	output = "lb_items:kelp",
 	recipe = {
@@ -120,11 +146,23 @@ minetest.register_craft({
 	}
 })
 
+
 minetest.register_craft({
-	output = "lb_items:string 3",
+    type = "shaped",
+    output = "lb_items:paper 3",
+    recipe = {
+        {"group:seeds", "group:seeds", "group:seeds"},
+        {"group:seeds", "group:seeds", "group:seeds"},
+        {"group:seeds", "group:seeds", "group:seeds"}
+    }
+})
+
+minetest.register_craft({
+	output = "lb_items:string",
 	recipe = {
-		{"lb_items:kelp",},
-		{"lb_items:kelp",},
+		{"lb_items:kelp", "lb_items:kelp"},
+		{"lb_items:kelp", "lb_items:kelp"},
+		{"lb_items:kelp", "lb_items:kelp"},
 	}
 })
 
