@@ -11,7 +11,7 @@ minetest.register_node("lsut_nodez:jukebox", {
 	groups = {chippable = 2, cracky = 1},
 	is_ground_content = true,
 	on_rightclick = function()
-		minetest.sound_play("d", {gain = 1})
+		minetest.sound_play("rock", {gain = 1})
 	end,
 })
 
