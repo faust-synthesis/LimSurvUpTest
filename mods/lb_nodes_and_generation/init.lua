@@ -5,7 +5,7 @@ local register_alias = minetest.register_alias
 register_node('lb_nodes_and_generation:stone', {
     tiles = { 'stone_texture.png' },
     description = "Stone",
-    groups = { oddly_breakable_by_hand = 1 },
+    groups = { oddly_breakable_by_hand = 1, chippable = 2  },
     is_ground_content = true
 })
 
