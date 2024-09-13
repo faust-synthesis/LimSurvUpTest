@@ -9,7 +9,10 @@ minetest.register_node("lsut_nodez:jukebox", {
 	description = "Jukebox",
 	tiles = {"lsut_nodez_jukeboxtop.png"},
 	groups = {chippable = 2, cracky = 1},
-	is_ground_content = true
+	is_ground_content = true,
+	on_rightclick = function()
+		minetest.sound_play("rock", {gain = 1})
+	end,
 })
 
 

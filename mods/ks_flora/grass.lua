@@ -1,4 +1,4 @@
-local g_groups = {attached_node = 1, sliceable = 1}
+local g_groups = {attached_node = 1, sliceable = 1, seeds = 1}
 local gm_groups = {attached_node = 1, sliceable = 1, mature_grass = 1}
 local bahiagrass_soil_types = {"group:wet_soil"}
 local juncus_soil_types = {"group:sand"}

@@ -5,7 +5,7 @@ local register_alias = minetest.register_alias
 register_node('ketchuptest_nodes:stone', {
     description = 'Stone',
     tiles = { 'stone_texture.png' },
-    groups = { cracky = 3 },
+    groups = { cracky = 3, chippable = 2 },
     is_ground_content = true
 })
 
